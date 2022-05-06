@@ -10,7 +10,7 @@ function prepararSopita() {
     hayAguaYCondimentos = document.querySelector(`#tiene_agua_y_condimentos`).value;
     hayAguaYCubito = document.querySelector(`#tiene_agua_y_cubitos`).value;
 
-if (hayVerduras == "si" && hayPolloOCarne == "si" && (hayAguayCondimentos == "si" || hayAguaYCubito == "si" )) {
+if (hayVerduras == "si" && hayPolloOCarne == "si" && (hayAguaYCondimentos == "si" || hayAguaYCubito == "si" )) {
     document.querySelector(`#mensaje_sopita`).innerHTML = `
     <h1 style="place-items: center;"> Puede hacer una sopita </h1>
     
