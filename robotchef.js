@@ -1,16 +1,25 @@
-var hayVerduras = true;
-var hayPollo = true;
-var hayCarne = true; 
-var hayAgua = true;
-var hayCondimentos = true;
-var hayCubito = true;
+let hayVerduras = "valorxdefecto";
+let hayPolloOCarne = "valorxdefecto"; 
+let hayAguaYCondimentos = "valorxdefecto";
+let hayAguaYCubito = "valorxdefecto";
 
-var sopa = `<img src="https://www.hola.com/imagenes/cocina/recetas/20171013100547/receta-sopa-pollo/0-741-140/sopa-pollo-m.jpg" alt="" srcset="">`
+function prepararSopita() {
 
-if (hayVerduras == true && (hayPollo == true || hayCarne ==true) && hayAgua == true && (hayCondimentos == true || hayCubito == true)){
-    document.write(`Hay Sopita
-    <br>
-    ${sopa}`);
+    hayVerduras = document.querySelector(`#tiene_verdura`).value;
+    hayPolloOCarne = document.querySelector(`#tiene_pollo_o_carne`).value;
+    hayAguaYCondimentos = document.querySelector(`#tiene_agua_y_condimentos`).value;
+    hayAguaYCubito = document.querySelector(`#tiene_agua_y_cubitos`).value;
+
+if (hayVerduras == "si" && hayPolloOCarne == "si" && (hayAguayCondimentos == "si" || hayAguaYCubito == "si" )) {
+    document.querySelector(`#mensaje_sopita`).innerHTML = `
+    <h1 style="place-items: center;"> Puede hacer una sopita </h1>
+    
+    ` ;
 } else {
-    document.write(`No hay sopita :(`);
+    document.querySelector(`#mensaje_sopita`).innerHTML = `
+    <h1 style="place-items: center;"> No puede hacer una sopita :( </h1>
+    
+    ` ;
+}
+
 }
