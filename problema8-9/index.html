@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="margin-top:10%; display:grid; place-items: center;">
+        <div>
+            <input type="text" name="" id="anio_procedencia" placeholder="Año de procedencia">
+        </div>
+        <br>
+        <div>
+            <input type="text" name="" id="anio_presente" placeholder="Año en el que nos encontramos">
+        </div>
+        <br>
+        <div>
+            <input type="text" name="" id="energia_actual" placeholder="Batería en gigawatts">
+        </div>
+        <br>
+        <div>
+            <button onclick="viajarEnElTiempo()">
+                Viajar en el tiempo
+            </button>
+        </div>
+        <br>
+        <h1 id="mensaje_viajero"></h1>
+        <br>
+        <h1 id="mensaje_bateria"></h1>
+    </div>
+
+    <script src="delorean.js"></script>
+</body>
+</html>
